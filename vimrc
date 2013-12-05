@@ -38,7 +38,6 @@ Bundle 'gmarik/vundle'
 " My bundles
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'bling/vim-airline'
 
 filetype plugin indent on
 
