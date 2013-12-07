@@ -19,7 +19,7 @@ fi
 # Backup and install dotfiles
 cd $DIR
 for FILE in $FILES; do
-    if [ -f "$FILE" -o -d "$FILE" ]; then
+    if [ -f "$FILE" ] || [ -d "$FILE" ]; then
         printf "Backing up $FILE"
         mv ~/.$FILE $BACKUP/$FILE
         printf "...done\n"
