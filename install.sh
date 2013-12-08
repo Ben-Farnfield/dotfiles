@@ -19,12 +19,14 @@ fi
 # Backup and install dotfiles
 cd $DIR
 for FILE in $FILES; do
-    if [ -f "$FILE" ] || [ -d "$FILE" ]; then
+    if [ -f ~/.$FILE ] || [ -d ~/.$FILE ]; then
         printf "Backing up $FILE"
         mv ~/.$FILE $BACKUP/$FILE
         printf "...done\n"
     fi
-    printf "Creating symlink for $FILE"
-    ln -s $DIR/$FILE ~/.$FILE
-    printf "...done\n"
+    if [ ! -f ~/.$FILE ] && [ ! -d ~/.$FILE ]; then
+        printf "Creating symlink for $FILE"
+        ln -s $DIR/$FILE ~/.$FILE
+        printf "...done\n"
+    fi
 done
