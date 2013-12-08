@@ -10,11 +10,13 @@ BACKUP=~/dotfiles_old
 FILES="vimrc vim profile"
 
 # Create backup folder
-if [ ! -d "$BACKUP" ]; then
-    printf "Creating $BACKUP to hold backup dotfiles"
-    mkdir $BACKUP
-    printf "...done\n"
+if [ -d $BACKUP ]; then
+    rm -R $BACKUP
 fi
+printf "Creating $BACKUP to hold backup dotfiles"
+mkdir $BACKUP
+printf "...done\n"
+
 
 # Backup and install dotfiles
 cd $DIR
