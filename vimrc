@@ -10,10 +10,10 @@ set number
 " =============== key bindings ===============  
 
 " Kill arrow keys
-no <down> ddp " move line down
+no <down> <Nop>
 no <left> <Nop>
 no <right> <Nop>
-no <up> ddkP " move line up
+no <up> <Nop>
 
 ino <down> <Nop>
 ino <left> <Nop>
@@ -24,25 +24,6 @@ vno <down> <Nop>
 vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
-
-" NERDTree
-nnoremap <leader>n :NERDTreeToggle<CR>
-
-" =============== vundle setup ===============  
-
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" vundle itself
-Bundle 'gmarik/vundle'
-
-" My bundles
-Bundle 'scrooloose/nerdtree'
-Bundle 'Lokaltog/vim-easymotion'
-
-filetype plugin indent on
 
 " =============== color scheme =============== 
 
