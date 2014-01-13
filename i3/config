@@ -135,7 +135,7 @@ bindsym $mod+r mode "resize"
 # Autostart #
 #############
 
-
+exec nitrogen --restore
 
 ###########
 # Theming #
@@ -159,7 +159,7 @@ bar {
 
         colors{
             background          #0F0F0F
-            statusline          #7FB256
+            statusline          #444444
             focused_workspace   #F5F5FF #7FB256
             active_workspace    #E5E5E5 #5697B2
             inactive_workspace  #E5E5E5 #5697B2
