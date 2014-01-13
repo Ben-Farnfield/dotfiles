@@ -7,7 +7,7 @@
 # Vars
 DIR=~/dotfiles
 BACKUP=~/dotfiles_old
-FILES="vimrc vim profile i3"
+FILES="vimrc vim profile i3/config"
 
 # Create backup folder
 if [ -d $BACKUP ]; then
