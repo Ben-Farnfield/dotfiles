@@ -162,7 +162,7 @@ new_window pixel 2
 
 # windows
 client.focused          #5697B2 #5697B2 #F5F5FF
-client.focused_inactive #5697B2 #5697B2 #F5F5F5
+client.focused_inactive #666666 #666666 #F5F5F5
 client.unfocused        #444444 #444444 #E5E5E5
 client.urgent           #BC9B54 #BC9B54 #E5E5E5
 
