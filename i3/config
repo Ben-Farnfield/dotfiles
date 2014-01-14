@@ -135,9 +135,26 @@ bindsym $mod+r mode "resize"
 # Autostart #
 #############
 
+# wallpaper
 exec nitrogen --restore
 
-###########
+# audio
+exec pnmixer
+
+# Dropbox
+exec ~/.dropbox-dist/dropbox
+
+# clipboard
+exec clipit
+
+# keyboard settings
+exec xset r rate 250 25
+
+# turn off beep
+exec xset b off
+
+
+##########
 # Theming #
 ###########
 
