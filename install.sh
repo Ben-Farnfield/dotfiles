@@ -7,7 +7,7 @@
 # Vars
 DIR=~/dotfiles
 BACKUP=~/dotfiles_old
-FILES="vimrc vim profile i3/config"
+FILES="vimrc vim profile i3"
 
 # Create backup folder
 if [ -d $BACKUP ]; then
@@ -15,7 +15,6 @@ if [ -d $BACKUP ]; then
 fi
 printf "Creating $BACKUP to hold backup dotfiles"
 mkdir $BACKUP
-mkdir "$BACKUP/i3"
 printf "...done\n"
 
 
