@@ -141,6 +141,9 @@ exec nitrogen --restore
 # audio
 exec pnmixer
 
+# network manager
+exec nm-applet
+
 # Dropbox
 exec ~/.dropbox-dist/dropbox
 
